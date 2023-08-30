@@ -3,7 +3,7 @@
 `timescale 1ns / 100 ps
 `include "multi_4bits.v"
 
-module multi_4bits_tb # (parameter bits = 4)
+module tt_um_multi_4bits_tb # (parameter bits = 4)
 (); // Definition of Input/Output signals
     reg [bits-1:0] A;
     reg [bits-1:0] B;
