@@ -1,6 +1,6 @@
 // Description: 4 bit Shift/Add Unsigned Binary Multiplier
 
-module tt_um_multi_4bits # (parameter bits = 4)(
+module multi_4bits # (parameter bits = 4)(
     input [bits-1:0]    A,
     input [bits-1:0]    B,
 
