@@ -7,7 +7,7 @@ project:  4 bit Shift/Add Unsigned Binary Multiplier
  # Source files must be in ./src and you must list each source file separately
   source_files:        
     - multi_4bits.v
-    - multi_4bits_tb.v
+    - tt_um_multi_4bits_tb.v
   top_module:  "tt_um_multi_4bits_tb"      # Put the name of your top module here, must start with "tt_um_". Make it unique by including your github username
 
 # How many tiles your design occupies? A single tile is about 167x108 uM.
