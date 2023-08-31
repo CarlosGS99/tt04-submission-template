@@ -35,8 +35,9 @@ documentation:
 # Instructions on how someone could test your project, include things like what buttons do what and how to set the clock if needed
   how_to_test:  |
       The multiplier calculates the product of two 4-bit numbers, inputs A and B, and sending this product to 8-bit output B.
-      This project works as a comninational design so it does not need a clock signal.
+      This project works as a secuential design so it needs a clock signal.
       For testing the project just connect the input pins to switches and the output pins to LEDs or a decoder and a display.
+      If reset signal is enabled the output will turn to 0.
 
       As a master’s student at the University of Guadalajara in the area of digital circuits, 
       having the possibility to manufacture an integrated circuit could be a very significant
@@ -53,6 +54,8 @@ documentation:
     - B[1]
     - B[2]
     - B[3]
+    - rst
+    - clk
 # A description of what the outputs do (e.g. status LED, SPI MISO, etc)
   outputs:
     - P[0]
