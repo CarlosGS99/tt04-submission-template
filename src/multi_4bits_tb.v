@@ -7,6 +7,7 @@ module multi_4bits_tb
 ( // Definition of Input/Output signals
     inout rst,
     inout clk,
+    inout ena,
     input [3:0] A,
     input [3:0] B,
 
@@ -22,6 +23,7 @@ end
 // Connect via wires inputs and outputs to their respective signals
 wire rst_tb = rst;
 wire clk_tb = clk;
+wire ena_tb = ena;
 wire [3:0] A_tb = A; 
 wire [3:0] B_tb = B;
 wire [7:0] result;
@@ -36,7 +38,8 @@ assign P = result;
             .io_A(A_tb), 
             .io_B(B_tb), 
             .clk(clk_tb),
-            .rst(rst_tb),  
+            .rst(rst_tb), 
+            .ena(ena_tb),
             .io_Product(result)
     );
 
