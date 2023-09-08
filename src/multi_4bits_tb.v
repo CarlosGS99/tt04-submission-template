@@ -35,8 +35,8 @@ assign P = result;
         `endif
             .io_A(A_tb), 
             .io_B(B_tb), 
-            .io_clk(clk_tb),
-            .io_rst(rst_tb),  
+            .clk(clk_tb),
+            .rst(rst_tb),  
             .io_Product(result)
     );
 
