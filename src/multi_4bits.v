@@ -1,6 +1,6 @@
 // Description: 4 bit Shift/Add Unsigned Binary Multiplier
 
-module tt_um_carlosgs99_multi_4bits # (parameter bits = 4)(
+module multi_4bits # (parameter bits = 4)(
     input wire               rst,
     input wire               clk,
     input wire [bits-1:0]    A,
