@@ -38,7 +38,7 @@ assign P = result;
             .io_A(A_tb), 
             .io_B(B_tb), 
             .clk(clk_tb),
-            .rst(rst_tb), 
+            .rst_n(rst_tb), 
             .ena(ena_tb),
             .io_Product(result)
     );
