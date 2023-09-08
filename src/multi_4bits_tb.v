@@ -3,7 +3,7 @@
 `timescale 1 ns / 100 ps
 `include "multi_4bits.v"
 
-module multi_4bits_tb # (parameter bits = 4)
+module tt_um_carlosgs99_multi_4bits_tb # (parameter bits = 4)
 (); // Definition of Input/Output signals
     reg rst;
     reg clk;
@@ -13,7 +13,7 @@ module multi_4bits_tb # (parameter bits = 4)
     output wire [bits*2-1:0] P;
 
 //Module instantiation
-    tt_um_carlosgs99_multi_4bits dut(
+    multi_4bits dut(
         .A(A), 
         .B(B), 
         .clk(clk),
