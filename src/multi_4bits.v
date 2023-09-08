@@ -2,8 +2,8 @@
 // Description: 4 bit Shift/Add Unsigned Binary Multiplier
 
 module tt_um_carlosgs99_multi_4bits (
-    inout        io_rst,
-    inout        io_clk,
+    inout        rst,
+    inout        clk,
     input  [3:0] io_A,
     input  [3:0] io_B,
 
@@ -12,8 +12,8 @@ module tt_um_carlosgs99_multi_4bits (
 
 parameter bits = 4;
 
-wire clk = io_clk;
-wire rst = io_rst;
+//wire clk = io_clk;
+//wire rst = io_rst;
 wire [bits-1:0] A = io_A;  
 wire [bits-1:0] B = io_B;
 
@@ -60,8 +60,8 @@ assign PP3_4 = PP3 + PP4;
 
 assign PF = (PP3_4 << 2) + (PP1_2);
 
-    always @(posedge io_clk, posedge io_rst) begin
-    if (io_rst) begin
+    always @(posedge clk, posedge rst) begin
+    if (rst) begin
         Product <= 0;
     end else begin
         Product <= PF;
