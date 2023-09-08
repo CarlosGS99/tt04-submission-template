@@ -1,3 +1,4 @@
+`default_nettype none
 // Description: 4 bit Shift/Add Unsigned Binary Multiplier
 
 module tt_um_carlosgs99_multi_4bits (
@@ -59,8 +60,8 @@ assign PP3_4 = PP3 + PP4;
 
 assign PF = (PP3_4 << 2) + (PP1_2);
 
-always @(posedge clk, posedge rst) begin
-    if (rst) begin
+    always @(posedge io_clk, posedge io_rst) begin
+    if (io_rst) begin
         Product <= 0;
     end else begin
         Product <= PF;
