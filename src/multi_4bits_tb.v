@@ -40,7 +40,7 @@ end
 initial begin
     write_data = $fopen("multi_4bits_tb_output.txt","w");    //Output files configuration
     $dumpfile("multi_4bits_tb.vcd");
-    $dumpvars(0,multi_4bits_tb);
+    $dumpvars(0,tt_um_carlosgs99_multi_4bits_tb);
 
     $timeformat(-9,2," ns",10); // Time format
 
