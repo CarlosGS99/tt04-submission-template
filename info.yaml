@@ -6,7 +6,6 @@ project:  4 bit Shift/Add Unsigned Binary Multiplier
  # If using an HDL, set wokwi_id as 0 and uncomment and list your source files here. 
  # Source files must be in ./src and you must list each source file separately
   source_files:     
-    - top.v
     - multi_4bits.v
     - multi_4bits_tb.v
   top_module:  "tt_um_carlosgs99_multi_4bits"      # Put the name of your top module here, must start with "tt_um_". Make it unique by including your github username
@@ -69,13 +68,6 @@ documentation:
   bidirectional:
     - clk
     - rst
-    - none
-    - none
-    - none
-    - none
-    - none
-    - none
-
 # The following fields are optional
   tag:          "4bit-multiplier, simulation, binary_multiplier"      # comma separated list of tags: test, encryption, experiment, clock, animation, utility, industrial, pwm, fpga, alu, microprocessor, risc, riscv, sensor, signal generator, fft, filter, music, bcd, sound, serial, timer, random number generator, calculator, decoder, counter, puzzle, multiplier, game, oscillator,
   external_hw:  ""      # Describe any external hardware needed
