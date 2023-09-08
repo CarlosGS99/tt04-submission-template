@@ -4,6 +4,7 @@
 module tt_um_carlosgs99_multi_4bits (
     inout        rst,
     inout        clk,
+    inout        ena,
     input  [3:0] io_A,
     input  [3:0] io_B,
 
@@ -60,7 +61,7 @@ assign PP3_4 = PP3 + PP4;
 
 assign PF = (PP3_4 << 2) + (PP1_2);
 
-    always @(posedge clk, posedge rst) begin
+    always @(posedge clk, posedge rst, posedge ena) begin
     if (rst) begin
         Product <= 0;
     end else begin
