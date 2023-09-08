@@ -9,7 +9,7 @@ project:  4 bit Shift/Add Unsigned Binary Multiplier
     - top.v
     - multi_4bits.v
     - tt_um_multi_4bits_tb.v
-  top_module:  "carlosgs99_multi"      # Put the name of your top module here, must start with "tt_um_". Make it unique by including your github username
+  top_module:  "tt_um_carlosgs99_multi_4bits"      # Put the name of your top module here, must start with "tt_um_". Make it unique by including your github username
 
 # How many tiles your design occupies? A single tile is about 167x108 uM.
   tiles: "1x2"    # Valid values: 1x1, 1x2, 2x2, 4x2 or 8x2
