@@ -65,8 +65,8 @@ documentation:
     - P[7]
 # A description of what the bidirectional I/O pins do (e.g. I2C SDA, I2C SCL, etc)
   bidirectional:
-    - clk
-    - rst
+    - none
+    - none
     - none
     - none
     - none
