@@ -67,7 +67,7 @@ documentation:
   bidirectional:
     - clk
     - rst
-    - ena
+    - none
     - none
     - none
     - none
